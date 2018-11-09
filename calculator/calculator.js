@@ -1,37 +1,30 @@
-let n1,n2
+//https://www.youtube.com/watch?v=Tab7V2X1RZ0
+let n1,n2,result
 
+function setValues(){
+    n1=Number(document.getElementById("num1").value)
+    n2=Number(document.getElementById("num2").value)
+}
 function sum() {
-    
-    
-    n1=Number(document.querySelector("#num1").value)
-    n2=Number(document.querySelector("#num2").value)
-
-    alert(n1+n2)
+    setValues()
+    result=n1+n2
+    alert(result)
 }
 
-function divide() {
-    let n1,n2
-    
-    n1=Number(document.querySelector("#num1").value)
-    n2=Number(document.querySelector("#num2").value)
-
-    alert(n1/n2)
+function div() {
+    setValues()
+    result=n1/n2
+    alert(result)
 }
 
-function multi() {
-    let n1,n2
-    
-    n1=Number(document.querySelector("#num1").value)
-    n2=Number(document.querySelector("#num2").value)
-
-    alert(n1*n2)
+function mult() {
+    setValues()
+    result=n1*n2
+    alert(result)
 }
 
-function sub() {
-    let n1,n2
-    
-    n1=Number(document.querySelector("#num1").value)
-    n2=Number(document.querySelector("#num2").value)
-
-    alert(n1-n2)
+function rest() {
+    setValues()
+    result=n1-n2
+    alert(result)
 }
